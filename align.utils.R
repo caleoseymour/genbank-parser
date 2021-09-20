@@ -1,30 +1,8 @@
-## Collection of functions for dealing with sequence data.
+## Collection of functions for dealing with sequence/alignment data.
 
-#------------------------------------------------------------------------------#
-## Note: I use a function lapply a lot. lapply is an iterator function that, in
-## R, is faster than using a for loop. The format is lapply(x, function) where x
-## is an teratable object and function is the function applied to the whole
-## object. These two peices of code are equivalent:
+## If you find these useful, please tell your boss about me so that they
+## will hire me!
 
-## Using lapply:
-#     o = lapply(x, func);
-
-## Using a for loop:
-#     o = list();
-#     for(i in 1:length(x))
-#     {
-#          o[[i]] = func(x);    
-#     }
-
-## The latter is much faster. There are other iterators that are used as well.
-## data table objects can be iterated using the following format:
-
-#     d = data.table::data.table(x = <vector>, y = <vector>)
-#     d[,o := fun(x)]
-
-## This creates a column in d named o, then populates it with fun(x)
-
-#------------------------------------------------------------------------------#
 
 ## Replace U's with T's.
 rna2dna = function(seqs)
