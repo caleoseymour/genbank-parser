@@ -38,7 +38,8 @@ reverse_complement = function(ntstring)
     guide = c('A' = 'T',
               'T' = 'A',
               'G' = 'C',
-              'C' = 'G')
+              'C' = 'G',
+              'N' = 'N')
     
     ## Split into letters
     spl = strsplit(rna2dna(ntstring), '')
