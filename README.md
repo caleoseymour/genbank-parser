@@ -17,3 +17,5 @@ A fast genbank flat file (.gb) to tsv parser. Omits the ORIGIN and FEATURES sect
 usage:
 parse-genbank.R [input file (.gb)] > [output file (.txt)]
 
+## read.gff.R
+Fast gff-reader for R. Source this one and it will give you "read.gff", a function for handling gff files.
